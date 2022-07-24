@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/login.css')
+  body
+   
+   div.container 
+    h1= 'Sign  up below'
+    form(action="/auth/signup" name="signup" method="post")
+        div.login-card
+            input(type="firstname" name="firstname" placeHolder="first name" required)
+            input(type="lastname" name="lastname" placeHolder="last name" required)
+            input(type="email" name="email" placeHolder="email" required)
+            input(type="password" name="password" placeHolder="password" required)
+            input(type="submit" value="sign up")
+            div.bottom-container
+        //- a(class="button", href="/auth/signup") Sign in
+
+       

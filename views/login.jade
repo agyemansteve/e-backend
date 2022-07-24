@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/login.css')
+  body
+   
+   div.container 
+    h1= 'Log in below'
+    form(action="/auth/login" name="login" method="post")
+        div.login-card
+            input(type="email" name="email" placeHolder="email" required)
+            input(type="password" name="password" placeHolder="password" required)
+            input(type="submit" value="Login")
+            div.bottom-container
+            a(class="button", href="/auth/signup") Sign up
+
+            a(class="button", href="") Forgot password?
